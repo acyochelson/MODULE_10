@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alyssa Yochelson | Graphic Design Portfolio</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -12,14 +16,17 @@
         <ul>
             <li>Home</li>
             <li>About Me</li>
-            <li>Work Experience</li>
-            <li>
-                Education
+            <li>Projects
+                <ul>
+                    <li>Websites</li>
+                    <li>Other Work</li>
+                </ul>
             </li>
+            <li>Education</li>
+            <li>Work Experience</li>
             <li>Contact Me
                 <ul>
-                    <li>Phone</li>
-                    <li>Email</li>
+                    <li><a href="mailto:acyochelson@gmail.com">Email</a></li>
                     <li>Social Media</li>
                 </ul>
             </li>
@@ -27,34 +34,39 @@
     </nav>
     <main>
         <header>
-            <img src="images/" alt="Portrait photo of Alyssa Yochelson.">
+            <img src="images/portrait_600px-bright.jpg"
+                 srcset="images/portrait_1200px-bright.jpg 2x"
+                 alt="Portrait photo of Alyssa Yochelson. Early 20's white woman with brown hair.">
             <section>
                 <h1>Alyssa Yochelson</h1>
-                <h2>Advertising and Graphic Design Student</h2>
+                <h2>Advertising & Graphic Design Student</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </section>
         </header>
-        <section class="projects">
+        <!-- Projects -->
+        <section>
             <h2>Featured Projects</h2>
-            <div class="project-items">
-                <a href="#"><img src="images/" alt="#"></a>
-                <a href="#"><img src="images/" alt="#"></a>
-                <a href="#"><img src="images/" alt="#"></a>
-                <a href="#"><img src="images/" alt="#"></a>
+            <div id="projects">
+                <a href="#" class="project-item"><img src="images/portfolio_600px.jpg" srcset="images/portfolio_1200px.jpg 2x" alt="Portfolio website screenshot."></a>
+                <a href="#" class="project-item"><img src="images/sprout_600px.jpg" srcset="images/sprout_1200px.jpg 2x" alt="Sprout and Grow website screenshot."></a>
+                <a href="#" class="project-item"><img src="images/london_600px.jpg" srcset="images/london_1200px.jpg 2x" alt="London travel website screenshot."></a>
+                <a href="#" class="project-item"><img src="images/knitting_600px.jpg" srcset="images/knitting_1200px.jpg 2x" alt="Knitting e-commerce website screenshot."></a>
             </div>
         </section>
     </main>
     <footer>
         <ul class="socials">
             <div class="contact">
-                <li><a href="mailto:acyochelson@my.waketech.edu">acyochelson@my.waketech.edu</a></li>
+                <li><a href="mailto:acyochelson@gmail.com">acyochelson@gmail.com</a></li>
             </div>
+            <div><span id="bar">&#124;</span></div>
             <div class="icons">
-                <li><a href="https://x.com/home" target="_blank"><img src="images/logo-white.png" alt="Twitter Home Page"></a></li>
-                <li><a href="https://www.facebook.com/home" target="_blank"><img src="images/Facebook_Logo_Primary.png" alt="Facebook Home Page"></a></li>
-                <li><a href="https://www.linkedin.com/hp" target="_blank"><img src="images/LI-In-Bug.png" alt="LinkedIn Home Page"></a></li>
+                <li><a href="https://www.linkedin.com/hp" target="_blank"><img src="images/linkedin-logo-white.png" alt="LinkedIn Home Page"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo-white.png" alt="Instagram Home Page"></a></li>
+                <li><a href="https://x.com/home" target="_blank"><img src="images/x-logo-white.png" alt="Twitter Home Page"></a></li>
+                <li><a href="https://www.facebook.com/home" target="_blank"><img src="images/facebook-logo-white.png" alt="Facebook Home Page"></a></li>
             </div>
         </ul>
     </footer>
