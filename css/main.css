@@ -1,10 +1,20 @@
 /* COLOR PALETTE
 --paynes-gray: #57737a;
 --eggplant: #463239;
---french-gray: #D0D5DC;
+--french-gray: #d0d5dc;
 --tangelo: #f6511d;
+--mustard: #ffd95c;
 --apple-green: #8fb339;
 */
+
+/* Breakpoints
+800px- project grid
+1000px- header
+605px- footer
+786px- nav becomes 2 rows 104.78
+488px- nav becomes 3 rows 157.17
+700px- header wrap
+500px- header orientation change */
 
 /* GLOBAL */
 html {
@@ -34,33 +44,46 @@ h1, h2, h3 {
     margin: 0;
 }
 h1 {
-    font-size: 2.6rem;
+    font-size: 2rem;
+    line-height: 1;
 }
 h2 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
 }
 h3 {
     font-size: 1.5rem;
+}
+p {
+    margin: 10px 0 0 0;
 }
 
 /* HEADER */
 header {
     background-color: #463239;
     color: white;
-    padding: 82.39px 200px 30px 200px;
+    padding: 82.39px 60px 30px 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 header h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-top: 5px;
 }
 header section {
     margin-left: 50px;
 }
-header img {
-    width: 180px;
+header p {
+    text-align: justify;
+}
+header picture{
+    /* width: 180px; */
     border: 2.5px solid white;
+    border-radius: 3px;
+}
+header picture img {
+    display: block;
+    width: 180px;
 }
 
 /* PROJECTS */
@@ -71,9 +94,11 @@ header img {
     margin-bottom: 35px;
     line-height: 1.2;
     border-bottom: 2px solid #46393e69;
+    color: #1d1518;
 }
 .projects h3 {
     margin-bottom: 5px;
+    color: #1d1518;
 }
 #project-grid {
     display: grid;
@@ -85,6 +110,8 @@ header img {
 .project-item img {
     width: 100%;
     margin-bottom: 10px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
 }
 
 .button {
@@ -162,6 +189,7 @@ nav ul li:hover ul{
 footer {
     background: #463239;
     width: 100%;
+    line-height: 1;
 }
 footer a {
     color: #ffffff;
@@ -189,4 +217,127 @@ footer a:hover {
 }
 .socials img:hover {
     opacity: 0.5;
+}
+
+/* MEDIA QUERIES */
+
+/* Header Queries */
+@media screen and (min-width: 1000px) {
+    header {
+        padding: 82.39px 150px 30px 150px;
+    }
+    header h2 {
+        font-size: 1.3rem;
+    }
+    header h1 {
+        font-size: 2.2rem;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 700px) {
+    header {
+        display: block;
+    }
+    header section {
+        margin: 0;
+    }
+    header p {
+        text-align: left;
+    }
+    header picture {
+        float: left;
+        text-wrap: wrap;
+        margin: 0 20px 8px 0;
+    }
+    header picture img {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    header section {
+        margin: 0;
+    }
+    header picture {
+        margin: 0 0 20px 0;
+    }
+    header picture img{
+        width: 100%;
+    }
+}
+/* Project Grid Queries */
+@media screen and (max-width: 600px) {
+    #project-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px 0;
+    }
+    .projects h3 {
+        font-size: 1.2rem;
+    }
+    .projects h2 {
+        font-size: 2rem;
+    }
+    .projects {
+        padding: 40px 30px 80px 30px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #project-grid {
+        gap: 40px 50px;
+    }
+    .projects h3 {
+        font-size: 1.2rem;
+    }
+    .projects h2 {
+        font-size: 2rem;
+    }
+    .button {
+        font-size: .8rem;
+    }
+    .button:first-of-type {
+        margin-bottom: 5px;
+    }
+}
+/* Footer Queries */
+@media screen and (max-width: 605px) {
+    #bar {
+        position: absolute;
+        left: -10000px;
+    }
+    .socials {
+        flex-direction: column;
+        padding: 0;
+    }
+    .socials div li:first-child {
+        margin-left: 0;
+    }
+    .contact {
+        margin-bottom: 10px;
+    }
+}
+/* Nav Bar Queries */
+@media screen and (max-width: 786px) {
+    nav {
+        position: absolute;
+        top: 0px;
+        left: 0;
+    }
+    header {
+        padding-top: 134.78px;
+    }
+}
+@media screen and (max-width: 488px) {
+    header {
+        padding-top: 187.17px;
+    }    
+}
+@media screen and (max-width: 374px) {
+    header {
+        padding-top: 239.56px;
+    }    
 }

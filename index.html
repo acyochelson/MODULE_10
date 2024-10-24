@@ -35,14 +35,20 @@
     </nav>
     <main>
         <header>
-            <img src="images/portrait_600px.jpg"
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/portrait_500px.jpg">
+                <source media="(min-width: 501px) and (max-width: 800px)" srcset="images/portrait_600px.jpg">
+                <source media="(min-width: 801px)" srcset="images/portrait_1200px.jpg">
+                <img src="images/portrait_600px.jpg" alt="Portrait photo of Alyssa Yochelson. Early 20's white woman with brown hair.">
+            </picture>
+            <!-- <img src="images/portrait_600px.jpg"
                  srcset="images/portrait_1200px.jpg 2x"
-                 alt="Portrait photo of Alyssa Yochelson. Early 20's white woman with brown hair.">
+                 alt="Portrait photo of Alyssa Yochelson. Early 20's white woman with brown hair."> -->
             <section>
                 <h1>Alyssa Yochelson</h1>
                 <h2>Advertising & Graphic Design Student</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Hi, my name is Alyssa Yochelson, I am an Advertising and Graphic Design Student at Wake Tech Community College, and I am based in Apex, NC. I've been working with various graphic design programs, such as Adobe Photoshop, for about 6 years, and I've been using HTML and CSS for web design for about 4 years. My goal is to become a freelance designer helping companies create their brand identities or designing their product packaging.
                 </p>
             </section>
         </header>
@@ -53,26 +59,34 @@
                 <section class="project-item">
                     <h3>Practice Portfolio</h3>
                     <img src="images/portfolio_600px.jpg" srcset="images/portfolio_1200px.jpg 2x" alt="Portfolio website screenshot.">
+
                     <a href="https://wcet.waketech.edu/acyochelson/WEB210/MODULE_9/index.html" target="_blank" class="button">View Project</a>
                     <a href="#" target="_blank" class="button">Learn More</a>
+
                 </section>
                 <section class="project-item">
                     <h3>Sprout & Grow</h3>
                     <img src="images/sprout_600px.jpg" srcset="images/sprout_1200px.jpg 2x" alt="Sprout and Grow website screenshot.">
+
                     <a href="https://wcet.waketech.edu/acyochelson/WEB140/sprout_and_grow/index.html" target="_blank" class="button">View Project</a>
                     <a href="#" target="_blank" class="button">Learn More</a>
+
                 </section>
                 <section class="project-item">
                     <h3>London Travel Guide</h3>
                     <img src="images/london_600px.jpg" srcset="images/london_1200px.jpg 2x" alt="London travel website screenshot.">
+
                     <a href="https://wcet.waketech.edu/acyochelson/WEB210/linked_files/london/index.htm" target="_blank" class="button">View Project</a>
                     <a href="#" target="_blank" class="button">Learn More</a>
+
                 </section>
                 <section class="project-item">
                     <h3>The Knitting Corner</h3>
                     <img src="images/knitting_600px.jpg" srcset="images/knitting_1200px.jpg 2x" alt="Knitting e-commerce website screenshot.">
+
                     <a href="https://wcet.waketech.edu/acyochelson/WEB210/linked_files/knitting/index.htm" target="_blank" class="button">View Project</a>
                     <a href="#" target="_blank" class="button">Learn More</a>
+
                 </section>
             </div>
         </section>
